@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        :root{
+            --color:black;
+            --seccolor:white;
+            --buttoncolor:purple;
+            --tertiarycolor:lime;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+           
+        .ul{
+            background-color:var(--color);
+            display: flex;
+            list-style: none;
+            padding: 14px 09px 15px 0px;
+    
+        }
+        a{
+            text-decoration: none;
+            color:var(--seccolor);
+            cursor: pointer;   
+        }
+        a:hover{
+            background-color:var(--buttoncolor);
+        }
+        .blocks{
+            padding: 3px 28px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+        .button{
+            border-radius: 6px;
+            padding: 10px 22px;
+            background-color:var(--seccolor);
+            margin-left: 200px;
+            border-radius: 30px;
+        }
+        .button:hover{
+            background-color:var(--tertiarycolor)
+        }
+        .Search{
+            padding: 0px 69px;
+            margin-left: 57px;
+            
+        }
+        body{
+            background-color: beige;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="ul">
+            <li class="blocks"><a href="#">Home</a></li>
+            <li class="blocks"><a href="#">Courses</a></li>
+            <li class="blocks"><a href="#">Tutorials</a></li>
+            <li class="blocks"><a href="#">Blog</a></li>
+            <li class="blocks"><a href="#">Notes</a></li>
+            <li class="blocks"><a href="#">Contact</a></li>
+            <input class="Search"  ="text" placeholder="Search Here">
+            <button class="button">Login</button>
+        </ul>
+    </nav>
+    
+</body>
+</html>
